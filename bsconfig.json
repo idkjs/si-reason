@@ -2,7 +2,7 @@
   "name": "si-reason",
   "reason": { "react-jsx": 3 },
   "bsc-flags": [ "-bs-super-errors" ],
-  "bs-dependencies": [ "@reasonable/react" ],
+  "bs-dependencies": [ "@rescript/react" ],
   "sources": [
     {
       "dir": "src",

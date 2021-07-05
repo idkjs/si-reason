@@ -22,7 +22,7 @@ var emptyColumnPositions = $$Array.make_matrix(Board$SiReason.numRows, Board$SiR
       0
     ]);
 
-function BoardView(Props) {
+function BoardViewRes(Props) {
   var rotation = Props.rotation;
   var board = Props.board;
   var move = Props.move;
@@ -30,7 +30,7 @@ function BoardView(Props) {
           return {
                   columnPositions: $$Array.mapi((function (x, row) {
                           return $$Array.mapi((function (y, param) {
-                                        var rect = document.getElementById(BoardBase$SiReason.markerId(x, y)).getBoundingClientRect();
+                                        var rect = Curry._1(document.getElementById(BoardBase$SiReason.markerId(x, y)).getBoundingClientRect, undefined);
                                         return [
                                                 rect.left,
                                                 rect.top
@@ -113,7 +113,7 @@ function BoardView(Props) {
                                   }), Board$SiReason.ijList))))));
 }
 
-var make = BoardView;
+var make = BoardViewRes;
 
 export {
   columnKey ,
