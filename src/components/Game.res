@@ -39,8 +39,8 @@ let make = () => {
       reset={_e => dispatch(Reset)}
       openAbout={_e => dispatch(OpenAbout)}
     />
-    <BoardView rotation board=gameState.board move={((x, y)) => dispatch(Move((x, y)))} />
-    // <BoardViewRes rotation board=gameState.board move={((x, y)) => dispatch(Move((x, y)))} />
+    // <BoardView rotation board=gameState.board move={((x, y)) => dispatch(Move((x, y)))} />
+    <BoardViewRes rotation board=gameState.board move={((x, y)) => dispatch(Move((x, y)))} />
     {showAbout ? <About close={_e => dispatch(CloseAbout)} /> : React.null}
   </div>
 }
