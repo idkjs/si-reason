@@ -5,7 +5,7 @@ import * as React from "react";
 import * as About$SiReason from "./About.bs.js";
 import * as Engine$SiReason from "../engine.bs.js";
 import * as Sidebar$SiReason from "./Sidebar.bs.js";
-import * as BoardViewRes$SiReason from "./BoardViewRes.bs.js";
+import * as BoardView$SiReason from "./BoardView.bs.js";
 
 function Game(Props) {
   var match = React.useReducer((function (state, action) {
@@ -79,7 +79,7 @@ function Game(Props) {
                   openAbout: (function (_e) {
                       return Curry._1(dispatch, /* OpenAbout */1);
                     })
-                }), React.createElement(BoardViewRes$SiReason.make, {
+                }), React.createElement(BoardView$SiReason.make, {
                   rotation: state.rotation,
                   board: gameState.board,
                   move: (function (param) {

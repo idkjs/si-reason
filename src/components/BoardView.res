@@ -25,7 +25,7 @@ let make = (~rotation, ~board, ~move) => {
           row |> Array.mapi((y, _) => {
             let rect = ReactDOM.domElementToObj(
               getElementById(BoardBase.markerId(x, y)),
-            )["getBoundingClientRect"]()
+            )["getBoundingClientRect"](.)
             (rect["left"], rect["top"])
           })
         ),
